@@ -1,0 +1,18 @@
+using System;
+
+namespace Картинки
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int totalImage = 52;
+            int maxImageInRow = 3;
+            int filledRow = totalImage / maxImageInRow;
+            int extraImage = totalImage % maxImageInRow ;
+
+            Console.WriteLine($"Полностью заполненных рядов: {filledRow}");
+            Console.WriteLine($"Картинок сверх меры: {extraImage}");
+        }
+    }
+}
